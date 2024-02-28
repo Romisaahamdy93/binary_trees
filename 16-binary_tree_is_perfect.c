@@ -41,5 +41,6 @@ return (0);
 if (tree->left == NULL && tree->right == NULL)
 return (1);
 
-return (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right));
+return (binary_tree_is_perfect(tree->left) &&
+	binary_tree_is_perfect(tree->right));
 }
