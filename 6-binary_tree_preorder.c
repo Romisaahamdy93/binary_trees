@@ -9,12 +9,12 @@
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (tree == NULL || func == NULL)
-        return;
+if (tree == NULL || func == NULL)
+return;
 
-    func(tree->n);  // Call the provided function for the current node
+func(tree->n);
 
-    // Recursively traverse the left and right subtrees
-    binary_tree_preorder(tree->left, func);
-    binary_tree_preorder(tree->right, func);
+
+binary_tree_preorder(tree->left, func);
+binary_tree_preorder(tree->right, func);
 }
